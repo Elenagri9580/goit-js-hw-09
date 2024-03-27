@@ -7,9 +7,11 @@ body {
 }
 
 .feedback-form {
+  border-radius: 8px;
   padding: 24px;
   max-width: 408px;
   height: 100%;
+  background: #fff;
 }
 
 label {
