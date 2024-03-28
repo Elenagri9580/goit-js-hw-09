@@ -1,5 +1,8 @@
 'use strict';
 
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -86,11 +89,8 @@ function createGallery(arr) {
     .join('');
 }
 
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 const galleryImages = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.7,
   captionsData: 'alt',
-  captionDelay: 250,  
+  captionDelay: 250,
 });
