@@ -15,7 +15,7 @@ function onInputTextarea() {
   localStorage.setItem('feedback-form-state', JSON.stringify(text));
 }
 
-function saveInputTextArea() {
+function saveInputTextarea() {
   const saveText = localStorage.getItem('feedback-form-state');
   if (saveText) {
     const parsedText = JSON.parse(saveText);
@@ -23,7 +23,7 @@ function saveInputTextArea() {
     message.value = parsedText.message;
   }
 }
-saveInputTextArea();
+saveInputTextarea();
 
 function handleSubmit(event) {
   event.preventDefault();
